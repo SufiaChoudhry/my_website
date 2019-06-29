@@ -2,29 +2,32 @@ body {
   background-image: url ("scarf_1.jpeg");
   background-color: white;
   margin: 0;
+  padding: 0;
+  width: 100%;
+  
 }
 
 nav {
-  height: 60px;
+  height: 80px;
   top: 0;
   position: fixed;
   background-color: lightsalmon;
   width: 100%;
   z-index: 10;
+
+  
 }
 
 nav a {
   text-decoration: none;
+ 
+  
 }
 
 nav a:hover {
   background-color: black;
 }
 
-hr {
-  color: seashell;
-  width: 100%;
-}
 
 .logo {
   position: absolute;
@@ -61,7 +64,7 @@ a {
   background-image: cover;
   background-image: no-repeat;
   height: 800px;
-  width: 1200px;
+  width: 100%;
   text-align: center;
   display: flex;
   margin: 0 auto;
@@ -90,14 +93,14 @@ h3 {
   text-align: center;
 }
 
-.hijab_row1 {
+.hijab-row1 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   text-align: center;
 }
 
-.hijab_row2 {
+.hijab-row2 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -106,55 +109,58 @@ h3 {
   padding-top: 20px;
 }
 
-.hijab_row3 {
+.hijab-row3 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   text-align: center;
 }
 
-.hijab_image img {
+.hijab-image img {
   height: 300px;
   width: 300px;
 }
 
-.hijab_image {
+.hijab-image {
   border: 1px solid black;
 }
 
-.hijab_image:hover {
-  background-color: rgb(23, 9, 36);
+.hijab-image:hover {
+  background-color: rgb(132, 0, 255);
 }
 
-.location_container {
+.location-container {
   background-image: url("images/photo-1526047932273-341f2a7631f9.jpg");
   background-image: cover;
   height: 550px;
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   margin-top: 100px;
+  display: flex;
+  flex-direction: column;
 }
 
-.location_image h1 {
+.location-image h1 {
   font-family: Arial;
   color: seashell;
   text-align: center;
   padding-top: 75px;
 }
 
-.location_row {
+.location-row {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-.location_post {
+.location-post {
   height: 300px;
   width: 300px;
   background-color: black;
   font-family: Arial;
   color: seashell;
   text-align: center;
+  border-radius: 50px;
 }
 
 #location {
@@ -165,7 +171,7 @@ h3 {
   border: 2px solid red;
   margin: 10px;
   padding: 15px 32px;
-  background-color: black;
+  background-color: palevioletred;
   color: white;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
@@ -184,7 +190,8 @@ h3 {
 }
 
 button:hover {
-  background-color: yellow;
+  background-color: red;
+  color: white;
 }
 
 footer {
@@ -204,4 +211,131 @@ footer a {
   background-color: black;
   color: white;
 }
+
+.location_post h3 {
+  padding: 10px;
+}
+
+#total {
+  color: black;
+}
+
+#inc-dec-input {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+#wallet {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#total-amount {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  background-color: palevioletred;
+}
+
+@media screen and (max-width: 800px) {
+
+ 
+  nav {
+    height: 20px;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: lightsalmon;
+    width: 100%;
+   
+  }
+
+body{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
   
+
+}
+
+.hijab-row1{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.hijab-row2{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+hijab-row3{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+
+
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+ 
+  nav {
+    height: 20px;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: lightsalmon;
+    width: 100%;
+   
+  }
+
+body{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  
+
+}
+
+.hijab-row1{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.hijab-row2{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+hijab-row3{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+
+
+
+}

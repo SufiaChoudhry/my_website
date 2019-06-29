@@ -29,7 +29,7 @@
             <li><a href="#">Under Scarves</a>
             </li>
         </ul>
-        <hr>
+    
     </nav>
     <div class="opening-image">
         <div class="banner">
@@ -40,75 +40,88 @@
     <div class="heading">
         <h3>MY HIJABS COLLECTION</h3>
     </div>
-    <div class="hijab_container">
-        <div class="hijab_row1">
-            <div class="hijab_image"><img src="images/bla.jpg" alt="scarf pic">
+    <div class="hijab-container">
+        <div class="hijab-row1">
+            <div class="hijab-image"><img src="images/bla.jpg" alt="scarf pic">
                 <h4 class="hijab-style">Printed Chiffon Shalamar</h4>
-                <button class="btn">ADD TO CART</button>
+                <button class="btn" onclick="addToCart()">ADD TO CART</button>
             </div>
-            <div class="hijab_image"><img src="images/bla2.jpg" alt="scarf pic">
+            <div class="hijab-image"><img src="images/bla2.jpg" alt="scarf pic">
                 <h4 class="hijab-style">Classic Chiffon Maroon</h4>
-                <button class="btn">ADD TO CART</button>
+                <button class="btn" onclick="addToCart()">ADD TO CART</button>
             </div>
-            <div class="hijab_image"><img src="images/bla3.jpg" alt="scarf pic">
+            <div class="hijab-image"><img src="images/bla3.jpg" alt="scarf pic">
                 <h4 class="hijab-style">Classic Chiffon Blue</h4>
-                <button class="btn">ADD TO CART</button>
+                <button class="btn" onclick="addToCart()">ADD TO CART</button>
             </div>
         </div>
-        <div class="hijab_row2">
-            <div class="hijab_image"><img src="images/bla4.jpg" alt="scarf pic">
+        <div class="hijab-row2">
+            <div class="hijab-image"><img src="images/bla4.jpg" alt="scarf pic">
                 <h4 class="hijab-style">Classic Chiffon Red</h4>
-                <button class="btn">ADD TO CART</button>
+                <button class="btn" onclick="addToCart()">ADD TO CART</button>
             </div>
-            <div class="hijab_image"><img src="images/bla5.jpg" alt="scarf pic">
+            <div class="hijab-image"><img src="images/bla5.jpg" alt="scarf pic">
                 <h4 class="hijab-style">Classic Chiffon Coffee</h4>
-                <button class="btn">ADD TO CART</button>
+                <button class="btn" onclick="addToCart()">ADD TO CART</button>
             </div>
         </div>
     </div>
     </div>
-    <div class="hijab_row3">
-        <div class="hijab_image"><img src="images/THC-Hijab-Batch-18-8b.jpg">
+    <div class="hijab-row3">
+        <div class="hijab-image"><img src="images/THC-Hijab-Batch-18-8b.jpg">
             <h4 class="hijab-style">Blossoms Seaweed</h4>
-            <button class="btn">ADD TO CART</button>
+            <button class="btn" onclick="addToCart()">ADD TO CART</button>
         </div>
-        <div class="hijab_image"><img src="images/THC-Hijab-Batch-17-29c.jpg">
+        <div class="hijab-image"><img src="images/THC-Hijab-Batch-17-29c.jpg">
             <h4 class="hijab-style">Printed Lawn Royal</h4>
-            <button class="btn">ADD TO CART</button>
+            <button class="btn" onclick="addToCart()">ADD TO CART</button>
         </div>
-        <div class="hijab_image"><img src="images/THC-Hijab-Batch-18-3b.jpg">
+        <div class="hijab-image"><img src="images/THC-Hijab-Batch-18-3b.jpg">
             <h4 class="hijab-style">Blossoms Mulberry</h4>
-            <button class="btn">ADD TO CART</button>
+            <button class="btn" onclick="addToCart()">ADD TO CART</button>
         </div>
     </div>
+    <div id="wallet">
+   <p >
+       I Have Rs.</p> <input type="number" onlclick="cash()" id="cash">
+   </div>
+   <div id="total-amount">
+       <p id="total"><span></span></p>
+<!--  -->
+   </div>
+   <div  id="inc-dec-input">
+    <button onclick="add()" id="add">increamentn </button>
+    <input type="text" id="addMin">
+    <button onclick="minus()" id="minus">decreament</button>
+</div>
 
-    <div class="location_container">
-        <div class="location_image">
+
+    <div class="location-container">
+        <div class="location-image">
             <h1 id="location">Locations</h1>
-            <div class="location_row">
-                <div class="location_post">
-                    <h1>Karachi</h1>
-                    <h3>Tariq road <br><br>
-                        Dolmen Mall Clifton<br><br>
-                        lucky one Mall</h3>
+            <div class="location-row">
+                <div class="location-post">
+                    <h3>Karachi</h3>
+                    <h3>Tariq road </h3> 
+                    <h3>  Dolmen Mall Clifton
+                    <h3>lucky one Mall</h3>
                 </div>
-                <div class="location_post">
-                    <h1>Lahore</h1>
-                    <h3>Emporium Mall<br><br>
-                        Packages Mall<br><br>
-                        Amanah Mall</3>
+                <div class="location-post">
+                    <h3>Lahore</h3>
+                    <h3>Emporium Mall</h3>
+                    <h3>   Amanah Mall</h3>
                 </div>
-                <div class="location_post">
-                    <h1>Islamabad</h1>
-                    <h3>Centaurus Mall<br><br>
-                        F-7 Markaz,Main Double Road<br><br>
-                        Do Burj Malld</h3>
+                <div class="location-post">
+                    <h3>Islamabad</h3>
+                    <h3>Centaurus Mall</h3>
+                    <h3>   F-7 Markaz,Main Double Road</h3>
+                        <h3> Do Burj Mall</h3>
                 </div>
             </div>
         </div>
     </div>
 
-    <footer>
+    <footer width="100%">
         <h1>zunaish Hijab</h1>
         <h3>Contact <a href="#">Info@zunaishhijab.com</a></h3>
         <div class="list-item">
@@ -118,7 +131,11 @@
             <a href="#"> <i class="fab fa-snapchat-square"></i></a>
             <a href="#"> <i class="fab fa-youtube-square"></i></a>
         </div>
+       
+        <h3 id="total"> how many scarf you have purchse <span></span></h3>
     </footer>
+    <script src="script.js"></script>
+  
 </body>
 
 </html>
